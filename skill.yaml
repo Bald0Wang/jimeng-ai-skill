@@ -1,0 +1,17 @@
+name: jimeng-ai
+description: 基于火山方舟官方 Ark API 的即梦文生图/文生视频能力，使用 Python 实现
+version: 1.4.0
+
+requirements:
+  env:
+    - name: ARK_API_KEY
+      description: 火山方舟 API Key
+      required: true
+  
+  note: |
+    当前实现使用官方 Ark API Key 鉴权，不再依赖旧版 AK/SK 签名方式。
+    获取方式：登录火山方舟控制台 → API Key
+
+scripts:
+  text2image: python scripts/text2image.py
+  text2video: python scripts/text2video.py
